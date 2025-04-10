@@ -39,5 +39,14 @@ The **DiscussionForum** is a full-stack web application enabling users to:
 
 ---
 
-## 🗂️ Project Structure
+
+---
+
+## ⚙️ Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/sheisstarwithoutmoon/DiscussionForum.git
+   cd DiscussionForum
+
 
