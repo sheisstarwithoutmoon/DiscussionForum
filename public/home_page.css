@@ -1,0 +1,165 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    background-image: url("image.png"); /* Replace with your image */
+    min-height: 60vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content */
+    color: #ffffff;
+    text-align: center; /* Ensure text is centered */
+}
+
+header * {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Stronger shadow for readability */
+}
+
+.header-content {/* Add margin for better spacing */
+    padding: 2rem; /* Add padding for better spacing */
+}
+
+.header-content h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem); /* Larger, responsive font size */
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-top: 70px;
+}
+
+/* Navigation styles */
+.navbar {
+    background-color: #2c3e50; /* Dark blue */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand img {
+    width: 50px; /* Consistent logo size */
+    height: auto;
+}
+
+.nav-link {
+    color: #ecf0f1 !important; /* Light gray-blue */
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #3498db !important; /* Bright blue */
+}
+
+/* Main content */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(236, 240, 241, 0.9); /* Light blue-gray overlay */
+    border-radius: 8px;
+}
+
+.section {
+    margin-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+}
+
+.section h2 {
+    color: #3498db; /* Vibrant blue */
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    text-align: center;
+    padding: 1rem;
+}
+
+.section p {
+    color: #2c3e50; /* Dark blue */
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Footer styles */
+.footer {
+    padding: 30px;
+    text-align: center;
+    background: #2c3e50; /* Dark blue */
+    color: #ecf0f1; /* Light gray-blue */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        min-height: 50vh;
+    }
+
+    .navbar-brand img {
+        width: 40px;
+    }
+
+    .section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section img {
+        margin: 0.5rem 0;
+    }
+
+    main {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    .footer {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        min-height: 40vh;
+    }
+
+    header h1 {
+        font-size: clamp(2rem, 6vw, 3rem);
+        padding: 0.5rem;
+    }
+
+    .section h2 {
+        font-size: clamp(1.2rem, 3vw, 1.8rem);
+    }
+
+    main {
+        margin: 0.5rem;
+        padding: 1rem;
+    }
+
+    .footer {
+        padding: 15px;
+    }
+}

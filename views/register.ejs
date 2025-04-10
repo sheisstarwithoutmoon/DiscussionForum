@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Discussion Forum Website , Discussion, Web development, App development, Machine Learning,Data Science, Student, Research, Software Engineering, Internship, SOftware Engineering Internship" />
+    <title>Discussion Forum</title>
+    <meta name="description" content="Discussion Forum website" />
+    <meta name="author" content="Siddharth Pandey" />
+    <link rel="stylesheet" type="text/css" href="register.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light sticky-top">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="#"><img src="logo.png" width="10%"></a>
+
+        <!-- Links -->
+        <ul class="navbar-nav float-right ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/login">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="/register">Register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/contact_us">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="form">
+            <h2>Registration Form</h2>
+
+
+            <div class="social">
+                <img src="facebook.png">
+                <img src="twitter.png">
+                <img src="linkedin.png">
+            </div>
+
+            <form action="/register" method="POST" id="login" class="input-group">
+                <input type="text" class="input-field" name="name" placeholder="Name" required>
+                <input type="text" class="input-field" placeholder="Discussion Forum Name" required>
+                <input type="email" class="input-field" name="email" placeholder="Email-Id" required>
+                <input type="password" class="input-field" name="password" placeholder="Password (atleast 6 characters)" required>
+                <input type="password" class="input-field" name="passwordrepeat" placeholder="Confirm Password" required>
+                <input type="checkbox" class="check-box"><span>I agree to terms & conditions</span>
+                <button type="submit" class="submit-btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        Copyright @ Discussion Forum Platform
+    </div>
+    <script>
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+    </script>
+
+
+
+</body>
+
+</html>
